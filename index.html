@@ -18,7 +18,7 @@
 
   </head>
 
-  <body class="">
+  <body class="layout-first-main-last">
     <div id="page" class="clearfix">
       
         <div id="skip">
@@ -125,17 +125,38 @@
           </div><!-- /sidebar-first -->
 
           <div id="content-wrapper">
-
-
-
-            <div id="content-top">
-            </div><!-- /content-top -->
             
             <div id="content">
               <a name="main-content" id="main-content"></a>
               <div id="content-tabs">
               </div>
                 <div id="sidebar-last">
+										<!-- start block.tpl.php -->
+										<div class="block-wrapper ">
+										  <div class="rounded-block">
+										    <div class="rounded-block-top-left"></div>
+										    <div class="rounded-block-top-right"></div>
+										    <div class="rounded-outside">
+										      <div class="rounded-inside">
+										        <p class="rounded-topspace"></p>
+
+
+										        <div id="block-archives" class="block block-archives">
+										          <div class="block-icon pngfix"></div>
+										          <h2 class="title block-title pngfix">Archives</h2>
+										          <div class="content">
+																<p>To see the collection of prior postings to the list, visit the <MM-Archive><MM-List-Name> Archives</MM-Archive>. <MM-Restricted-List-Message></p>
+															</div>
+										        </div>
+
+										        <p class="rounded-bottomspace"></p>
+										      </div><!-- /rounded-inside -->
+										    </div>
+										    <div class="rounded-block-bottom-left"></div>
+										    <div class="rounded-block-bottom-right"></div>
+										  </div><!-- /rounded-block -->
+										</div>
+										<!-- /end block.tpl.php -->
                 </div><!-- /sidebar_last -->
 
 
@@ -184,35 +205,6 @@
             </div><!-- /content-bottom -->
 
           </div><!-- /content-wrapper -->
-
-            <div id="sidebar-last">
-							<!-- start block.tpl.php -->
-							<div class="block-wrapper ">
-							  <div class="rounded-block">
-							    <div class="rounded-block-top-left"></div>
-							    <div class="rounded-block-top-right"></div>
-							    <div class="rounded-outside">
-							      <div class="rounded-inside">
-							        <p class="rounded-topspace"></p>
-
-
-							        <div id="block-archives" class="block block-archives">
-							          <div class="block-icon pngfix"></div>
-							          <h2 class="title block-title pngfix">Archives</h2>
-							          <div class="content">
-													<p>To see the collection of prior postings to the list, visit the <MM-Archive><MM-List-Name> Archives</MM-Archive>. <MM-Restricted-List-Message></p>
-												</div>
-							        </div>
-
-							        <p class="rounded-bottomspace"></p>
-							      </div><!-- /rounded-inside -->
-							    </div>
-							    <div class="rounded-block-bottom-left"></div>
-							    <div class="rounded-block-bottom-right"></div>
-							  </div><!-- /rounded-block -->
-							</div>
-							<!-- /end block.tpl.php -->
-            </div><!-- /sidebar_last -->
 
           <div id="postscript-wrapper" class="<?php print $postscripts; ?> clearfix">
             <div id="postscript-first" class="column">
