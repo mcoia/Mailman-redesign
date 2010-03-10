@@ -159,7 +159,8 @@ body.layout-main-last #sidebar-last div.block-search h2.block-title,
 body.layout-main-last #sidebar-last div.block-user h2.block-title,
 body.layout-main-last #sidebar-last #block-user-0 h2.block-title,
 body.layout-main-last #sidebar-last #block-views-archive-block h2.block-title,
-body.layout-main-last #sidebar-last #block-views-comments_recent-block h2.block-title {
+body.layout-main-last #sidebar-last #block-views-comments_recent-block h2.block-title,
+body.layout-main-last #sidebar-last #block-archives h2.block-title {
   padding: 12px 0 0 52px;
 }
 
@@ -183,3 +184,7 @@ body.layout-main-last #sidebar-last #block-views-comments_recent-block h2.block-
 }
 
 */
+
+#block-archives div.block-icon {
+	background: transparent url('icons/tnt_icon_10.png') no-repeat left center;
+}
