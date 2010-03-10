@@ -1,0 +1,242 @@
+<?php
+// $Id: page.tpl.php,v 1.2.2.1 2009/05/25 09:33:09 jwolf Exp $
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="<?php print $language->language; ?>">
+
+  <head>
+    <title><MM-List-Name> Info Page</title>
+   
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Main stylesheet" charset="utf-8" />
+		<!--[if IE 7]>
+      <link rel="stylesheet" href="ie7-fixes.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <![endif]-->
+    <!--[if lte IE 6]>
+      <link rel="stylesheet" href="ie6-fixes.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <![endif]-->
+
+  </head>
+
+  <body class="">
+    <div id="page" class="clearfix">
+      
+        <div id="skip">
+          <a href="#main-content"><?php print t('Skip to Main Content'); ?></a>
+        </div>
+      <div id="header-wrapper">
+        <div id="header" class="clearfix">
+          
+					<!--<div id="search-box">
+
+          </div> --> <!-- /search-box --> 
+
+      
+          <div id="header-first">
+
+            <div id="logo">
+              <a href="/mailman" title="Back to the front page of the MOBIUS Discusssion Lists"><img src="logo.png" alt="Go back to the front page of the MOBIUS Discussion Lists" /></a>
+            </div>
+
+            <h1><a href="" title="">Discussions</a></h1>
+
+            <span id="slogan"></span>
+
+          </div><!-- /header-first -->
+  
+          <div id="header-middle">
+
+          </div><!-- /header-middle -->
+      
+          <div id="header-last">
+
+          </div><!-- /header-last -->
+      
+        </div><!-- /header -->
+      </div><!-- /header-wrapper -->
+      
+      <div id="primary-menu-wrapper" class="clearfix">
+        <div id="primary-menu">
+        </div><!-- /primary_menu -->
+      </div><!-- /primary-menu-wrapper -->
+
+      <div id="preface">
+        <div id="preface-wrapper" class="clearfix">
+          <div id="mission"> 
+          </div>
+        
+          <div id="preface-first" class="column">
+          </div><!-- /preface-first -->
+
+          <div id="preface-middle" class="column">
+          </div><!-- /preface-middle -->
+
+          <div id="preface-last" class="column">
+          </div><!-- /preface-last -->
+        </div><!-- /preface-wrapper -->
+      </div><!-- /preface -->
+
+      <div id="main-wrapper">
+        <div id="main" class="clearfix">
+          
+          <div id="breadcrumb">
+          </div><!-- /breadcrumb -->
+        
+          <div id="sidebar-first">
+						<!-- start block.tpl.php -->
+						<div class="block-wrapper">
+						  <div class="rounded-block">
+						    <div class="rounded-block-top-left"></div>
+						    <div class="rounded-block-top-right"></div>
+						    <div class="rounded-outside">
+						      <div class="rounded-inside">
+						        <p class="rounded-topspace"></p>
+						        <div id="block-subscribe" class="block block-subscribe">
+						          <div class="block-icon pngfix"></div>
+						          <h2 class="title block-title pngfix">Subscribe to <MM-List-Name></h2>
+						          <div class="content">
+												
+											 <!--       <p>Subscribe to <MM-List-Name> by filling out the following form. <MM-List-Subscription-Msg></p> -->
+
+											        <p>Your email address: <MM-Subscribe-Box></p>
+
+											        <p>Your name (optional): <mm-fullname-box></p>
+
+											 <!--        <p>You may enter a privacy password below. This provides only mild security, but should prevent others from messing with yoursubscription. Do not use a valuable password as it will occasionally be emailed back to you in cleartext. </p>
+
+											        <p>If you choose not to enter a password, one will be automatically generated for you, and it will be sent to you once you've confirmed your subscription.  You can always request a mail-back of your password when you edit your personal options. <MM-Reminder> </p> -->
+
+											        <p>Pick a password: <MM-New-Password-Box></p>
+												<p>Reenter password to confirm: <MM-Confirm-Password></p>     
+											        <p><mm-digest-question-start> Would you like to receive list mail batched in a daily digest? <MM-Undigest-Radio-Button> No <MM-Digest-Radio-Button>  Yes <mm-digest-question-end></p>
+											        <p><MM-Subscribe-Button></p>
+											        <MM-Form-End>
+						          </div>
+						        </div>
+
+						        <p class="rounded-bottomspace"></p>
+						      </div><!-- /rounded-inside -->
+						    </div>
+						    <div class="rounded-block-bottom-left"></div>
+						    <div class="rounded-block-bottom-right"></div>
+						  </div><!-- /rounded-block -->
+						</div>
+						<!-- /end block.tpl.php -->
+          </div><!-- /sidebar-first -->
+
+          <div id="content-wrapper">
+
+
+
+            <div id="content-top">
+            </div><!-- /content-top -->
+            
+            <div id="content">
+              <a name="main-content" id="main-content"></a>
+              <div id="content-tabs">
+              </div>
+                <div id="sidebar-last">
+                </div><!-- /sidebar_last -->
+
+
+              <div id="content-inner">
+                
+                <div id="help">
+                </div>
+
+                <h1 class="title"></h1>
+                <div id="content-content">
+									<!-- start node.tpl.php -->
+									<div id="node-node" class="node">
+
+									  <h2 class="title">For Current <MM-List-Name> Subscribers</h2>
+
+									  <div class="meta">
+									    <span class="submitted"></span>
+									  </div>
+
+									  <div class="content">
+									    <!--	<MM-Roster-Form-Start>
+												<MM-Roster-Option>
+												<MM-Form-End> -->
+
+											        <p><MM-Options-Form-Start>
+												<MM-Editing-Options>
+												<MM-Form-End></p>
+
+											        Here are some words.
+									  </div>
+
+									  <div class="terms">
+									  </div>
+
+									  <div class="links">
+									  </div>
+
+									  <div id="node-bottom">
+									  </div>
+									</div>
+                </div>
+              </div><!-- /content-inner -->
+            </div><!-- /content -->
+
+            <div id="content-bottom">
+            </div><!-- /content-bottom -->
+
+          </div><!-- /content-wrapper -->
+
+            <div id="sidebar-last">
+							<!-- start block.tpl.php -->
+							<div class="block-wrapper ">
+							  <div class="rounded-block">
+							    <div class="rounded-block-top-left"></div>
+							    <div class="rounded-block-top-right"></div>
+							    <div class="rounded-outside">
+							      <div class="rounded-inside">
+							        <p class="rounded-topspace"></p>
+
+
+							        <div id="block-archives" class="block block-archives">
+							          <div class="block-icon pngfix"></div>
+							          <h2 class="title block-title pngfix">Archives</h2>
+							          <div class="content">
+													<p>To see the collection of prior postings to the list, visit the <MM-Archive><MM-List-Name> Archives</MM-Archive>. <MM-Restricted-List-Message></p>
+												</div>
+							        </div>
+
+							        <p class="rounded-bottomspace"></p>
+							      </div><!-- /rounded-inside -->
+							    </div>
+							    <div class="rounded-block-bottom-left"></div>
+							    <div class="rounded-block-bottom-right"></div>
+							  </div><!-- /rounded-block -->
+							</div>
+							<!-- /end block.tpl.php -->
+            </div><!-- /sidebar_last -->
+
+          <div id="postscript-wrapper" class="<?php print $postscripts; ?> clearfix">
+            <div id="postscript-first" class="column">
+            </div><!-- /postscript-first -->
+
+
+
+            <div id="postscript-middle" class="column">
+
+            </div><!-- /postscript-middle -->
+
+            <div id="postscript-last" class="column">
+
+            </div><!-- /postscript-last -->
+
+          </div><!-- /postscript-wrapper -->
+
+          <div id="footer" class="clearfix">
+
+          </div><!-- /footer -->
+
+          
+        </div><!-- /main -->
+      </div><!-- /main-wrapper -->
+    </div><!-- /page -->
+  </body>
+</html>
